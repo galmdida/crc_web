@@ -1,0 +1,261 @@
+body{
+	font-size: 16px;
+	color: black;
+	background: lightblue;
+	font-family: oxygen, serif;
+}
+
+.container-fluid{
+	background-color: #f6b319;
+}
+.navbar{
+	margin: 0px;
+	padding: 0px;
+	background-color: #f6b319;
+	height: 35px;
+}
+header{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f6b319;
+}
+.contact{
+	margin-bottom: 1px;
+	height: 35px;
+}
+/*To avoid logo moving down to body*/
+.navbar-brand{
+	margin: 0px;
+	padding: 0px;
+}
+/*To avoid logo moving down to body*/
+.navbar-brand img
+{
+    max-height: 98%;
+}
+/*We want to make nav-list to have a light background when we hover the cursor*/
+.nav-item a:hover{
+	background: #E7E7E7;
+}
+
+.nav-item a:active{
+	background-color: #E7E7E7;
+}
+
+.love{
+	height: 400px;
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+/*For text*/
+	color: darkblue;
+	font-family: Oxygen, Arial, Helvetica, serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+/*The padding on the small screen looks bad which is okay with large screen
+corrected as below*/
+	padding: 5%;
+}
+
+/*Lets try fade in*/
+.fade-in-text{
+	animation: fadeIn 6s;
+}
+
+/*Adding key frame*/
+@keyframes fadeIn{
+	0%{opacity:0;}
+	100%{opacity: 1}
+}
+
+
+/* Lets try to make our the distance between paragraphs in the div responsive */
+.love1{
+	padding: 4%;
+}
+
+/*Lets add padding to love2*/
+.love2{
+	padding: 4%;
+}
+
+
+/*I dont want my background image to repeat when I make it 100% it works fine with large screen
+but poor with small screen. By adding extra margin in small screen*/
+
+@media(min-width: 768px){
+	.love{
+		background-size: 100%;
+	}
+}
+/*Make the width of the text not overlap the picture*/
+@media(min-width: 768px){
+	.love1{
+		background-size: 100%;
+		width: 60%;
+	}
+}
+/*Make the width of the text not overlap the picture*/
+@media(min-width: 768px){
+	.love2{
+		background-size: 100%;
+		width: 60%;
+	}
+}
+
+
+/*This is what I want to do, there is no background color and the button drop down is not visible
+with my current background on a small screen, I want to change the collapse background/text color
+when my screen falls below 768px using media query*/
+@media (max-width: 767px){
+	.collapse{
+		background-color: #f6b319;
+	}
+}
+
+/*Buttons*/
+/*For the button learn more, we wanna connect it to the services class*/
+.button1{
+	background-color: green;
+	border: 1px solid white;
+	margin-left: 4%;
+	margin-right: 3%;
+
+}
+
+/*Now, if you want to change text color and text decoration, we are using a*/
+.button1 > a{
+	color: white;
+	text-decoration: none;
+}
+
+.button2{
+	background-color: purple;
+	border: 1px solid white;
+}
+
+/*Now, if you want to change text color and text decoration, we are using a*/
+.button2 > a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/*For the section of the services, below jumbotron*/
+.intro{
+	background-color: goldenrod;
+	margin: 0px;
+	padding: 0px;
+}
+
+.intro1{
+	margin:0px;
+	text-align: center;
+}
+
+.intro2{
+	margin: 0px;
+	text-align: center;
+}
+
+/*Service section*/
+.services{
+	height: 400px;
+	background-color: green;
+	margin: 0px;
+}
+
+.train{
+	background-color: palegoldenrod;
+	border: 1px solid darkgray;
+	float: left;
+	margin: 0px;
+	height: 100%;
+	width: 33.33%;
+}
+.Research{
+	background-color: ivory;
+	border: 1px solid darkgray;
+	float: left;
+	margin: 0px;
+	height: 100%;
+	width: 33.33%;
+}
+.Business{
+	background-color: palevioletred;
+	border: 1px solid darkgray;
+	float: left;
+	margin: 0px;
+	height: 100%;
+	width: 33.33%;
+}
+
+/*our story - why people choose us*/
+
+
+
+
+/*Here is where we are dealing with testimonials*/
+.testimonials{
+	height: 400px;
+	background-color: lawngreen;
+}
+
+/*Lets format footer*/
+.footer{
+	height: 200px;
+	background-color: cornflowerblue;
+}
+
+.footer1{
+	height: 50px;
+	background-color: powderblue;
+}
+
+.footer2{
+	height: 100px;
+	background-color: paleturquoise;
+}
+
+.footer3{
+	height: 50px;
+	text-align: center;
+	padding: 1px;
+}
+
+/*Now, lets format contents in footer2*/
+.f2_brief{
+	border: 1px solid darkgray;
+	float: left;
+	margin: 0px;
+	height: 100%;
+	width: 33.33%;
+}
+
+.f2_links{
+	border: 1px solid darkgray;
+	float: left;
+	margin: 0px;
+	height: 100%;
+	width: 33.33%;
+}
+
+.f2_contacts{
+	border: 1px solid darkgray;
+	float: left;
+	margin: 0px;
+	height: 100%;
+	width: 33.33%;
+}
+
+
+
+
+/*Adding buttons in jumbotron and formatting the button*/

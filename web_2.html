@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Consuldata and Research Centre</title>
+<!-- Linking to cdn links in Bootstrap home page the following two links below-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<!-- We added defer in the link below -->
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<!-- Linking to my style sheet -->
+	<link rel="stylesheet" type="text/css" href="web_2.css">
+</head>
+<body>
+	<header>
+		<!-- Look at bs- toggle different from what we had -->
+		<div class="container-fluid contact navbar-right">
+			<nav class="navbar navbar-expand-lg nav-bar-light" style="background-color: #f6b319;">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+<!-- I changed div class from "collapse navbar-collapse" to "navbar" and remove id "id="navbarSupportedContent"" -->
+  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!-- To have your bars arranged left to right, check the line below -->
+<!-- Nilitoa hizi other social media because dropdown on the small screens are overlapping -->
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<!-- <li class="nav-item"> <a class="nav-link" href="#">Whatsapp</a> </li> -->
+					<!-- <li class="nav-item active"><a class="nav-link" href="#">Facebook</a></li> -->
+					<!-- <li class="nav-item"><a class="nav-link" href="#">LinkedIn</a></li> -->
+<!-- Here is how to make the phone start calling when you click on phone number -->
+					<li class="nav-item"><a class="nav-link" href="tell:0741370493">Call/SMS/WhatsApp:+254741370493</a></li>
+				</ul>
+			</nav>
+		</div>
+<!-- The lower part of our navigation bar is as shown here -->
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg nav-bar-light" style="background-color: #f6b319;">
+				<a class="navbar-brand" href="https://www.facebook.com/crcentre1/">
+						<img src="Logo.png" width="90" height="33">Consuldata and Research Centre 
+				</a>
+<!-- Look at the data-target in button and id of the div -->
+<!-- For bootstrap 5, we are using data-bs-toggle and data-bs-target instead of data-toggle and data-target in the previous version -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      					<li class="nav-item active">
+        					<a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">About</a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">Blog</a>
+      					</li>
+      					<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          					Training
+        					</a>
+        					<ul class="dropdown-menu">
+          					<li><a class="dropdown-item" href="#">Data Analysis Tools</a></li>
+          					<li><a class="dropdown-item" href="#">Business Intelligence</a></li>
+          					<li><a class="dropdown-item" href="#">Data Science and ML</a></li>
+          					<li><a class="dropdown-item" href="#">Graphics and Design</a></li>
+          					<li><a class="dropdown-item" href="#">Front-end Developer</a></li>
+          					<li><a class="dropdown-item" href="#">Back-end Developer</a></li>
+          					<li><a class="dropdown-item" href="#">Full-stack Developer</a></li>
+          					<li><a class="dropdown-item" href="#">Monitoring and Evaluation</a></li>
+        					</ul>
+      					</li>
+      					<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          					Research Consultancy
+        					</a>
+        					<ul class="dropdown-menu">
+          					<li><a class="dropdown-item" href="#">Research Topic Guidance</a></li>
+          					<li><a class="dropdown-item" href="#">Annotated Bibliography</a></li>
+          					<li><a class="dropdown-item" href="#">Sampling and Data Collection</a></li>
+          					<li><a class="dropdown-item" href="#">Data Collection Tools Design</a></li>
+          					<li><a class="dropdown-item" href="#">Quantitative Data Analysis and Interpretation</a></li>
+          					<li><a class="dropdown-item" href="#">Qualitative Data Analysis and Interpretation</a></li>
+          					<li><a class="dropdown-item" href="#">Research Report Writing</a></li>
+        					</ul>
+      					</li>
+      					<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          					Research Consultancy
+        					</a>
+        					<ul class="dropdown-menu">
+          					<li><a class="dropdown-item" href="#">Market Research</a></li>
+          					<li><a class="dropdown-item" href="#">Business Plan</a></li>
+          					<li><a class="dropdown-item" href="#">Business Proposal</a></li>
+          					<li><a class="dropdown-item" href="#">Funding Proposal</a></li>
+          					<li><a class="dropdown-item" href="#">Digital Branding</a></li>
+          					<li><a class="dropdown-item" href="#">Website Development</a></li>
+          					<li><a class="dropdown-item" href="#">System Development</a></li>
+          					<li><a class="dropdown-item" href="#">POS Development</a></li>
+          					<li><a class="dropdown-item" href="#">Data Consultancy</a></li>
+          					<li><a class="dropdown-item" href="#">Cloud Consultancy</a></li>
+          					<li><a class="dropdown-item" href="#">e-bi</a></li>
+        					</ul>
+      					</li>
+    				</ul>
+  				</div>
+  			</nav>
+		</div>
+	</header>
+	<!-- jumborton -->
+	<div class="love fade-in-text">
+		<div class="love1">
+			Academic/ markert/ institution research consultancy, business data consultancy, and data analysis, visualization and ML training
+		</div>
+		<div class="love2">
+			Oasis of Research, Data and Business Analytics Skills
+		</div>
+		<button class="button1">
+			<a href="#train">Learn More</a>
+		</button>
+		<button class="button2">
+			<a href="#f2_contacts">Contact Us</a>
+		</button>
+	</div>
+
+
+	<!-- Lets us create a section for brief services -->
+	<div class="intro">
+		<div class="intro1">
+			Our Services
+		</div>
+		<div class="intro2">
+			What we can do for you
+		</div>
+	</div>
+<!-- The service section -->
+	<div class="services">
+		<div class="train" id="train">
+			Training
+		</div>
+		<div class="Research">
+			Research Consultancy
+		</div>
+		<div class="Business">
+			Business Consultancy
+		</div>
+	</div>
+
+
+
+<!-- Lets create section for brief our story -->
+<div class="intro">
+		<div class="intro1">
+			Our Story
+		</div>
+		<div class="intro2">
+			Why people love to work with us
+		</div>
+	</div>
+
+<!-- Section for our story -->
+<div class="services">
+		<div class="train">
+			Image here
+		</div>
+		<div class="Research">
+			Description of why people love us here
+		</div>
+	</div>
+
+
+
+
+
+	<!-- Lets us create a section for Our blogs -->
+	<div class="intro">
+		<div class="intro1">
+			Our Blogs
+		</div>
+		<div class="intro2">
+			Read the latest article
+		</div>
+	</div>
+<!-- The service section -->
+	<div class="services">
+		<div class="train">
+			Article 1
+		</div>
+		<div class="Research">
+			Article 2
+		</div>
+		<div class="Business">
+			Article 3
+		</div>
+	</div>
+
+
+
+	<!-- Lets us create a section for brief services -->
+	<div class="intro">
+		<div class="intro1">
+			Testimonials
+		</div>
+		<div class="intro2">
+			What our clients say
+		</div>
+	</div>
+<!-- The service section -->
+	<div class="services">
+		<div class="train">
+			Testimonial 1
+		</div>
+		<div class="Research">
+			Testimonial 2
+		</div>
+		<div class="Business">
+			Testimonial 3
+		</div>
+	</div>
+
+
+<!-- Footer -->
+<div class="footer" id="footer">
+	<div class="footer1">
+		Contact form
+	</div>
+	<div class="footer2">
+		<div class="f2_brief">
+			brief about us
+		</div>
+		<div class="f2_links">
+			Important links
+		</div>
+		<div class="f2_contacts" id="f2_contacts">
+			Contact us
+		</div>
+	</div>
+	
+	<div class="footer3">
+		Copyright &copy;2023. Galm Dida
+	</div>
+
+</div>
+
+
+
+<!-- jQuery (bootstrap plugins depends on it) -->
+<!-- <script type="text/javascript" src="jquery-3.6.4.min.js"></script> -->
+<!-- <script type="text/javascript" src="bootstrap.min.js"></script> -->
+<!-- <script type="text/javascript" src="crc_web.js"></script> -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/5.0.3/js/bootstrap.min.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/5.0.3/css/bootstrap.min.css"> -->
+</body>
+</html>
